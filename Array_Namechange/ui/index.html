@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Solution - NameChange UI</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="action-container" class="ui-wrapper">
+        <div class="modal">
+            
+            <div class="header">
+                <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
+                <div class="title-container">
+                    <h1 class="title-outline">NAMECHANGE</h1>
+                    <h2 class="title-solid">ARRAY SOLUTION</h2>
+                </div>
+                <button id="close-x-btn" class="close-btn"><i class="ph ph-x"></i></button>
+            </div>
+
+            <div class="announcement-box">
+                <i class="ph ph-megaphone megaphone-icon"></i>
+                <div class="announcement-text">
+                    <span class="announcement-title">ANKÜNDIGUNG</span>
+                    <span class="announcement-desc">Ändere deinen Vorname sowie deinen Nachnamen.</span>
+                </div>
+            </div>
+
+            <div class="inputs">
+                <input type="text" id="firstname" placeholder="Firstname" autocomplete="off" maxlength="12">
+                <input type="text" id="lastname" placeholder="Lastname" autocomplete="off" maxlength="12">
+            </div>
+
+            <div class="button-group">
+                <button id="submit-btn" class="btn btn-confirm">NAME ÄNDERN</button>
+                <button id="close-btn" class="btn btn-cancel">ABBRECHEN</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

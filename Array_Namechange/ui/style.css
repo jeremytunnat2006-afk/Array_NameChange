@@ -1,0 +1,75 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+
+body {
+    width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;
+    background: transparent; /* Transparent für FiveM */
+    overflow: hidden;
+}
+
+.ui-wrapper { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; }
+
+.modal {
+    background: #061121; width: 550px; padding: 35px; border-radius: 16px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    display: flex; flex-direction: column;
+}
+
+.header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px; }
+.logo { width: 50px; height: 50px; object-fit: contain; }
+
+.title-container { text-align: center; flex-grow: 1; display: flex; flex-direction: column; margin-top: -5px; }
+
+/* HIER WURDE DER 3D-EFFEKT KOMPLETT ENTFERNT */
+.title-outline {
+    font-family: 'Lalezar', sans-serif; 
+    font-size: 2.5rem; 
+    color: #ffffff; 
+    letter-spacing: 2px;
+    margin-bottom: -8px; 
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* AUCH HIER WURDE DER EFFEKT ENTFERNT */
+.title-solid {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 1.1rem; 
+    font-weight: 400; 
+    color: #ffffff; 
+    letter-spacing: 4px; 
+    text-transform: uppercase;
+}
+
+.close-btn {
+    background: rgba(204, 0, 0, 0.15); color: #ff3333; border: 1px solid rgba(204, 0, 0, 0.3);
+    width: 32px; height: 32px; border-radius: 8px; display: flex; justify-content: center; align-items: center;
+    font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease;
+}
+.close-btn:hover { background: #ff1a1a; color: #ffffff; transform: rotate(90deg); }
+
+.announcement-box {
+    background: rgba(10, 35, 75, 0.3); border: 1px solid rgba(0, 85, 255, 0.2);
+    border-radius: 12px; padding: 16px 20px; display: flex; align-items: center; gap: 18px; margin-bottom: 30px;
+}
+.megaphone-icon { font-size: 2.2rem; color: #0066ff; }
+.announcement-text { display: flex; flex-direction: column; }
+.announcement-title { color: #0066ff; font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 4px; }
+.announcement-desc { color: #cbd5e1; font-size: 0.9rem; font-weight: 400; }
+
+.inputs { display: flex; flex-direction: column; gap: 15px; margin-bottom: 30px; padding: 0 10px; }
+.inputs input {
+    width: 100%; background: #03070d; border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px; padding: 16px; color: #ffffff; font-size: 1rem; font-weight: 600;
+    text-align: center; outline: none; transition: all 0.3s ease;
+}
+.inputs input::placeholder { color: #334155; font-weight: 400; }
+.inputs input:focus { border-color: #0055ff; box-shadow: 0 0 15px rgba(0, 85, 255, 0.15); transform: translateY(-2px); }
+
+.button-group { display: flex; gap: 15px; width: 100%; padding: 0 10px; }
+.btn { flex: 1; padding: 16px; border: none; border-radius: 8px; font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; cursor: pointer; transition: all 0.3s ease; }
+
+.btn-confirm { background: linear-gradient(135deg, #0055ff 0%, #0033cc 100%); color: #ffffff; border: 1px solid rgba(0, 85, 255, 0.5); box-shadow: 0 4px 15px rgba(0, 85, 255, 0.2); }
+.btn-confirm:hover { background: linear-gradient(135deg, #0066ff 0%, #0044dd 100%); transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0, 85, 255, 0.4); border-color: rgba(0, 102, 255, 0.8); }
+
+.btn-cancel { background: rgba(255, 255, 255, 0.03); color: #94a3b8; border: 1px solid rgba(255, 255, 255, 0.08); }
+.btn-cancel:hover { background: rgba(0, 85, 255, 0.1); color: #ffffff; border-color: rgba(0, 85, 255, 0.3); transform: translateY(-4px); }
